@@ -26,12 +26,6 @@ img{
     left: 0;
 }
 
-#error{
-    display: none;
-    align-items:center;
-    justify-content:center;
-    height:100vh;
-}
 
 #saludos{
     /*Que se vea la imagen que esta debajo*/
@@ -41,7 +35,7 @@ img{
     /*Hago que se superponga*/
     position: absolute;
     top: 40%;
-    left: 2%;
+    left: 13%;
     right: 2%;
     text-align: center;
     
@@ -68,6 +62,5 @@ img{
     text-align: center;
     justify-content: center;
     width: auto;
-    
    }
 }

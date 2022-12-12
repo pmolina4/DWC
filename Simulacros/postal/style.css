@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.principal {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+#saludos {
+  /*Que se vea la imagen que esta debajo*/
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5vw;
+
+  /*Hago que se superponga*/
+  display: flex;
+  position: absolute;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-top: 50vh;
+
+  /*Que la letra se vea bien*/
+  color: gold;
+  font-size: 2em;
+  font-style: italic;
+  text-shadow: 0px 2px goldenrod;
+  visibility: hidden;
+}
+
+
+@media(orientation:landscape) {
+  .principal {
+    width: 40vw;
+  }
+
+  #saludos {}
+
+}
