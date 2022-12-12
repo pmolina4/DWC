@@ -40,7 +40,7 @@ img{
     
     /*Hago que se superponga*/
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 2%;
     right: 2%;
     text-align: center;
@@ -56,15 +56,12 @@ img{
 
 @media (orientation:landscape){
     #saludos{
-        position: absolute;
         width: min-content;
-        margin-bottom: 50%;
-        margin-left: 23%;
+        margin-left: 34%;
     }
     
    img{
     margin-left: 35%;
-    margin-right: 25%;
     margin-top: 0;
     margin-bottom: 0; 
     height: 100vh;
