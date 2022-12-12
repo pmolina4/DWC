@@ -56,5 +56,8 @@ img{
     #error{
         display: flex;
     }
+    #saludos{
+        visibility: hidden;
+    }
    
 }

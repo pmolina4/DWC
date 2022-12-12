@@ -13,5 +13,5 @@ let body = document.querySelector("body");
 body.addEventListener("click", ocultarSaludo);
 
 function ocultarSaludo() {
-    document.getElementById("saludos").style.visibility="hidden";
+    document.getElementById("saludos").style.visibility="visible";
   }
