@@ -50,14 +50,13 @@ img{
 }
 
 @media (orientation:landscape){
-    img{
-        display: none;
-    }
-    #error{
-        display: flex;
-    }
     #saludos{
-        visibility: hidden;
+        width: 50%;
+        margin-left: 23%;
     }
-   
+   img{
+    margin-left: 25%; 
+    width: 50vw;
+    height: 100vh;
+   }
 }
