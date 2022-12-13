@@ -12,6 +12,10 @@ body {
 
 }
 
+audio {
+  display: none
+}
+
 .principal {
   display: flex;
   width: 100%;
@@ -19,6 +23,42 @@ body {
   overflow: hidden;
 
 }
+
+#grinch {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  position: absolute;
+  margin-top: 40vh;
+  visibility: hidden;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
+#felizGrinch{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  position: absolute;
+  margin-top: 25vh;
+  visibility: hidden;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
+#puerta {
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 41vh;
+  visibility: hidden;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
+
 
 #postal {
   width: 100vw;
@@ -41,7 +81,7 @@ body {
   width: auto;
   height: auto;
   text-align: center;
-  margin-top: 50vh;
+  margin-top: 30vh;
 
   /*Que la letra se vea bien*/
   color: gold;
@@ -49,6 +89,7 @@ body {
   font-style: italic;
   text-shadow: 0px 2px goldenrod;
   visibility: hidden;
+
   /* para suavizar los efectos */
   transition: all 1.5s ease;
   -webkit-transition: all 1.5s ease;
@@ -57,8 +98,6 @@ body {
 
 @media(orientation:landscape) {
   .principal {
-    width:70vh;
+    width: 70vh;
   }
-
-
 }
