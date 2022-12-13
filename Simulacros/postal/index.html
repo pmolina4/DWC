@@ -7,17 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <style>
+        #train {
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="principal">
-        <img src="./fonfoPostal.jpg" >
-        <p id="saludos">FELICIDADES TE DESEA PABLO</p>
+        <img src="./fonfoPostal.jpg" id="postal">
+        <p id="saludos"><img id="train"  src="https://js.cx/clipart/train.gif"></p>
+
     </div>
 
+    <script>
+        train.onclick = function () {
+            let start = Date.now();
 
-    <script type="text/javascript" src="funcion.js"></script>
+            let timer = setInterval(function () {
+                let timePassed = Date.now() - start;
+
+                train.style.left = timePassed / 5 + 'px';
+
+                if (timePassed > 2000) clearInterval(timer);
+
+            }, 20);
+        }
+    </script>
+    <script type=" text/javascript" src="funcion.js"></script>
 </body>
 
 </html>
