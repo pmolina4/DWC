@@ -26,15 +26,10 @@ body {
   background-size: cover;
 }
 
-#train{
-  display: flex;
-  position: absolute;
-  margin-top: 15%;
-  margin-left: -200px;
-}
 
 #saludos {
   /*Que se vea la imagen que esta debajo*/
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 5vw;
 
   /*Hago que se superponga*/
