@@ -24,6 +24,9 @@ body {
   width: 100vw;
   height: 100vh;
   background-size: cover;
+  /* para suavizar los efectos */
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
 }
 
 
@@ -46,12 +49,15 @@ body {
   font-style: italic;
   text-shadow: 0px 2px goldenrod;
   visibility: hidden;
+  /* para suavizar los efectos */
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
 }
 
 
 @media(orientation:landscape) {
   .principal {
-    width: 40vw;
+    width:70vh;
   }
 
 
