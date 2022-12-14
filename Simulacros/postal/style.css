@@ -35,6 +35,31 @@ audio {
   -webkit-transition: all 1.5s ease;
 }
 
+
+#bola1 {
+  width: 18vw;
+  height: 7vh;
+  display: flex;
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 37vh;
+  visibility: visible;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
+#bola2 {
+  width: 18vw;
+  height: 7vh;
+  display: flex;
+  position: absolute;
+  margin-top: 6vh;
+  margin-left: 27vh;
+  visibility: visible;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
 #felizGrinch{
   width: 100vw;
   height: 50vh;

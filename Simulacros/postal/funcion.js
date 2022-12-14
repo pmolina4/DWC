@@ -3,6 +3,7 @@ var audio = document.getElementById("audio");
 var audioPuerta = document.getElementById("audioPuerta");
 var audioNavidad = document.getElementById("cancionNavidad");
 var musica = document.getElementById("musica");
+var bola = document.getElementById("bola");
 
 //MOSTRAR SALUDO CUANDO PASAN 5sg DEL INICIO DE LA PÁGINA
 const myTimeout = setTimeout(mostrarSaludo, 3000);
@@ -23,9 +24,23 @@ function ocultarSaludo() {
 
 //Mover la posicion del grinch y poner la puerta visible con la musica
 document.getElementById("grinch").addEventListener("click", function () {
-  document.getElementById("grinch").style.transform = "scaleX(-1)";
+  document.getElementById("grinch").style.transform = "scaleX(-1)";  
   document.getElementById("puerta").style.visibility = "visible";
   audio.play();
+});
+
+
+//Mover la posicion de la bola1 y poner l amusica 
+document.getElementById("bola1").addEventListener("click", function () {
+  document.getElementById("bola1").style.transform = "translate(0,850px)";  
+  bola.play();
+  console.log("bola1");
+});
+//Mover la posicion de la bola1 y poner l amusica 
+document.getElementById("bola2").addEventListener("click", function () {
+  document.getElementById("bola2").style.transform = "translate(0,850px)";  
+  bola.play();
+  console.log("bola1");
 });
 
 
@@ -59,6 +74,8 @@ window.addEventListener("orientationchange", ()=> {
   if (window.screen.orientation.type == "landscape-primary") {
       document.getElementById("grinch").style.visibility = "hidden";//ocultamos el grinch
       document.getElementById("saludos").style.visibility = "hidden"; //ocultamos el saludo
+      document.getElementById("bola1").style.visibility = "hidden"; //ocultamos el saludo
+      document.getElementById("bola2").style.visibility = "hidden"; //ocultamos el saludo
       document.getElementById("felizGrinch").style.visibility = "visible"; //mostramos el grinc de felicidades
       document.getElementById("felizGrinch").style.width = "32vw"; // le cambiamos el tamaño
       //Se para toda la musica 
