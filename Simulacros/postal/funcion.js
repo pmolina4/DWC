@@ -36,9 +36,27 @@ document.getElementById("bola1").addEventListener("click", function () {
   bola.play();
   console.log("bola1");
 });
-//Mover la posicion de la bola1 y poner l amusica 
+//Mover la posicion de la bola2 y poner l amusica 
 document.getElementById("bola2").addEventListener("click", function () {
   document.getElementById("bola2").style.transform = "translate(0,850px)";  
+  bola.play();
+  console.log("bola1");
+});
+//Mover la posicion de la bola3 y poner l amusica 
+document.getElementById("bola3").addEventListener("click", function () {
+  document.getElementById("bola3").style.transform = "translate(0,850px)";  
+  bola.play();
+  console.log("bola1");
+});
+//Mover la posicion de la bola4 y poner l amusica 
+document.getElementById("bola4").addEventListener("click", function () {
+  document.getElementById("bola4").style.transform = "translate(0,850px)";  
+  bola.play();
+  console.log("bola1");
+});
+//Mover la posicion de la bola5 y poner l amusica 
+document.getElementById("bola5").addEventListener("click", function () {
+  document.getElementById("bola5").style.transform = "translate(0,850px)";  
   bola.play();
   console.log("bola1");
 });
@@ -74,8 +92,11 @@ window.addEventListener("orientationchange", ()=> {
   if (window.screen.orientation.type == "landscape-primary") {
       document.getElementById("grinch").style.visibility = "hidden";//ocultamos el grinch
       document.getElementById("saludos").style.visibility = "hidden"; //ocultamos el saludo
-      document.getElementById("bola1").style.visibility = "hidden"; //ocultamos el saludo
-      document.getElementById("bola2").style.visibility = "hidden"; //ocultamos el saludo
+      document.getElementById("bola1").style.visibility = "hidden"; //ocultamos el bola
+      document.getElementById("bola2").style.visibility = "hidden"; //ocultamos el bola
+      document.getElementById("bola3").style.visibility = "hidden"; //ocultamos el bola
+      document.getElementById("bola4").style.visibility = "hidden"; //ocultamos el bola
+      document.getElementById("bola5").style.visibility = "hidden"; //ocultamos el bola
       document.getElementById("felizGrinch").style.visibility = "visible"; //mostramos el grinc de felicidades
       document.getElementById("felizGrinch").style.width = "32vw"; // le cambiamos el tamaño
       //Se para toda la musica 

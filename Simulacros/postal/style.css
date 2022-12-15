@@ -60,6 +60,42 @@ audio {
   -webkit-transition: all 1.5s ease;
 }
 
+#bola3 {
+  width: 18vw;
+  height: 7vh;
+  display: flex;
+  position: absolute;
+  margin-top: 9vh;
+  margin-left: 16vh;
+  visibility: visible;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
+#bola4 {
+  width: 18vw;
+  height: 7vh;
+  display: flex;
+  position: absolute;
+  margin-top: 24vh;
+  margin-left: 9vh;
+  visibility: visible;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
+#bola5 {
+  width: 18vw;
+  height: 7vh;
+  display: flex;
+  position: absolute;
+  margin-top: 9vh;
+  margin-left: 0vh;
+  visibility: visible;
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
 #felizGrinch{
   width: 100vw;
   height: 50vh;
