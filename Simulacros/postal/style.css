@@ -131,6 +131,8 @@ audio {
 }
 
 
+
+
 #saludos {
   /*Que se vea la imagen que esta debajo*/
   background-color: rgba(0, 0, 0, 0.8);
@@ -157,8 +159,61 @@ audio {
 }
 
 
+
+
+
 @media(orientation:landscape) {
   .principal {
     width: 70vh;
   }
+}
+
+#felicitacion{
+  background-color: rgb(0, 128, 0, 0.2);
+
+  color:red;
+  border-radius: 5vw;
+  visibility: hidden;
+  border-color: gray;
+  border-width: 2px;
+  border-style: solid;
+  border-color: green;
+  
+  font-size: 60px;
+  line-height: 50px;
+  height: 50px;
+
+  position: absolute;
+  margin-top: 32vh;
+  right: 1vh;
+  left: 1vh;
+  text-align: center;
+  overflow: hidden;
+  
+  /* para suavizar los efectos */
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+}
+
+
+ul{
+  list-style: none;
+  animation: cambiar 5s infinite;
+}
+
+
+@keyframes cambiar{
+  0%{margin-top: 0;}
+  20%{margin-top: 0;}
+
+  25%{margin-top: -50px;}
+  50%{margin-top: -50px;}
+  
+  55%{margin-top: -100px;}
+  80%{margin-top: -100px;}
+ 
+  85%{margin-top: -150;}
+  95%{margin-top: -150;}
+  
+  100%{margin-top: 0px;}
 }

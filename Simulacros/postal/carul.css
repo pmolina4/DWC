@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container{
+
+    border-top-style: dashed;
+    border-right-style: double;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    
+    font-size: 60px;
+    line-height: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+ul{
+    list-style: none;
+    animation: cambiar 8s infinite;
+}
+
+
+@keyframes cambiar{
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+
+    25%{margin-top: -50px;}
+    50%{margin-top: -50px;}
+    
+    55%{margin-top: -100px;}
+    80%{margin-top: -100px;}
+   
+    85%{margin-top: -150;}
+    95%{margin-top: -150;}
+    
+    100%{margin-top: 0px;}
+}

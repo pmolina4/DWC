@@ -8,7 +8,7 @@ var bola = document.getElementById("bola");
 //MOSTRAR SALUDO CUANDO PASAN 5sg DEL INICIO DE LA PÁGINA
 const myTimeout = setTimeout(mostrarSaludo, 3000);
 function mostrarSaludo() {
-  document.getElementById("saludos").style.visibility = "visible";
+  document.getElementById("felicitacion").style.visibility = "visible";
   document.getElementById("grinch").style.visibility = "visible";
 }
 
@@ -17,7 +17,8 @@ function mostrarSaludo() {
 let body = document.querySelector("body");
 body.addEventListener("click", ocultarSaludo);
 function ocultarSaludo() {
-  document.getElementById("saludos").style.visibility = "hidden";
+  document.getElementById("felicitacion").style.visibility = "hidden";
+
 }
 
 
@@ -91,7 +92,7 @@ window.addEventListener("orientationchange", ()=> {
     //CUANDO ESTA EN LANDSCAPE HACEMOS LO QUE HAY DENTRO DEL CONDICIONAL
   if (window.screen.orientation.type == "landscape-primary") {
       document.getElementById("grinch").style.visibility = "hidden";//ocultamos el grinch
-      document.getElementById("saludos").style.visibility = "hidden"; //ocultamos el saludo
+      document.getElementById("felicitacion").style.visibility = "hidden"; //ocultamos el saludo
       document.getElementById("bola1").style.visibility = "hidden"; //ocultamos el bola
       document.getElementById("bola2").style.visibility = "hidden"; //ocultamos el bola
       document.getElementById("bola3").style.visibility = "hidden"; //ocultamos el bola
